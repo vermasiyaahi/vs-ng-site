@@ -1,48 +1,152 @@
 .main-div {
-  display: flex;
   justify-content: center;
+  display: flex;
+  display: flex;
+  align-content: space-between;
 }
 
 .content {
-  text-align: center;
+  height: 97vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .vs-logo {
   width: 130px;
-  margin-top: 32px;
+  /* margin-top: 32px; */
 }
 
-.empty-space {
+/* .empty-space {
   height: 150px;
+} */
+
+.cmng-soon {
+  margin-bottom: 10%;
+  text-align: center;
 }
 
 .title {
   font-size: 85px;
-  font-family: "Playfair Display", serif;
+  font-family: "Playfair Display";
 }
 
 .soon-desc {
   font-size: 24px;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .details {
-  margin-top: 100px;
+  /* margin-top: 100px; */
   display: flex;
 }
 
 .address {
-  margin-right: 375px;
+  margin-right: 275px;
+  /* width: 160px; */
   font-family: "noe_display_bold";
   font-size: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
-.small-label{
-    font-size: 14px;
-    margin-right: 80px;
-    color: #A9ABAE;
+.small-label {
+  font-size: 14px;
+  /* margin-right: 80px; */
+  color: #a9abae;
+  align-self: flex-start;
 }
 
 .contact {
   font-family: "noe_display_bold";
   font-size: 20px;
+  text-align: center;
+}
+
+svg {
+  height: 29px;
+  fill: #a9abae;
+  margin-bottom: 6px;
+}
+
+.social-media-icons {
+  display: flex;
+}
+
+.fa-brands {
+  padding: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-brands:hover {
+  transform: scale(1.5);
+}
+
+/* @media only screen and (max-width: 775px) {
+  .title {
+    font-size: 60px;
+  }
+  .soon-desc {
+    font-size: 18px;
+  }
+
+  .address {
+    margin-right: 150px;
+  }
+} */
+
+@media only screen and (max-width: 775px) {
+  .title {
+    font-size: 55px;
+  }
+  .soon-desc {
+    font-size: 14px;
+  }
+
+  .address {
+    margin-right: 85px;
+    font-size: 14px;
+  }
+
+  .contact {
+    font-size: 14px;
+  }
+  .small-label {
+    font-size: 10px;
+  }
+  svg {
+    height: 24px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .vs-logo {
+    width: 75px;
+  }
+
+  .title {
+    font-size: 65px;
+  }
+  .soon-desc {
+    font-size: 16px;
+    padding: 0 24px;
+  }
+
+  .address {
+    margin-right: 50px;
+    font-size: 14px;
+  }
+
+  .contact {
+    font-size: 14px;
+  }
+  .small-label {
+    font-size: 10px;
+  }
+  svg {
+    height: 24px;
+  }
 }

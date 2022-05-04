@@ -1,7 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap");
 
 @font-face {
-    font-family: "noe_display_bold";
-    src: url("./assets/fonts/NOE-DISPLAY-BOLD.ttf") format("truetype");
+  font-family: "noe_display_bold";
+  src: url("./assets/fonts/NOE-DISPLAY-BOLD.ttf") format("truetype");
+}
+
+@media only screen and (max-width: 750px) {
+  .title {
+    font-size: 60px;
   }
+  .soon-desc {
+    font-size: 18px;
+  }
+
+  .address {
+    margin-right: 150px;
+  }
+}
